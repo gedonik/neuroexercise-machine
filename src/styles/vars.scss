@@ -1,0 +1,62 @@
+//colors
+:root {
+  --main-black: #000;
+  --main-light: #fff;
+  --main: #707070;
+  --accent: #f07fae;
+  --gallery: #eee;
+  --shaft: #333;
+}
+
+//flex-mixins
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-h-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-all-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin svg-v-flex {
+  .svg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+      transition: fill 0.3s ease-in-out;
+
+      &:hover {
+        fill: var(--accent);
+      }
+    }
+  }
+}
+
+@mixin svg-hover-only {
+  svg {
+    transition: fill 0.3s ease-in-out;
+
+    &:hover {
+      fill: var(--accent);
+    }
+  }
+}

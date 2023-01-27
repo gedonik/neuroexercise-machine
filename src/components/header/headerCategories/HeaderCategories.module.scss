@@ -1,0 +1,25 @@
+.headerCategories {
+  margin-bottom: 35px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 25px 40px;
+  }
+
+  &__item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #333333;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}

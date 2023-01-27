@@ -1,0 +1,127 @@
+@import './src/styles/vars';
+
+.headerInfo {
+  @include flex;
+  padding: 2rem 0;
+
+  &__logoLink,
+  &__searchForm {
+    margin-right: 2rem;
+  }
+
+  &__searchForm {
+    display: block;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0.9rem;
+      width: 1.2rem;
+      height: 1.2rem;
+      background-image: url('src/assets/images/icons/search.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.headerAddress {
+  position: relative;
+  font-style: normal;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    height: 50px;
+    border: 1px solid var(--gallery);
+    background-color: var(--gallery);
+  }
+
+  &__contacts {
+    @include flex-v-center;
+    margin-bottom: 0.4rem;
+  }
+
+  &__phone,
+  &__mail {
+    position: relative;
+    margin-right: 1.2rem;
+    padding-left: 2rem;
+    color: var(--shaft);
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 1.2rem;
+      height: 1.2rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__phone {
+    font-weight: 700;
+    font-size: 1.1em;
+
+    &::before {
+      background-image: url('src/assets/images/icons/phone.svg');
+    }
+  }
+
+  &__mail {
+    &::before {
+      background-image: url('src/assets/images/icons/mail.svg');
+
+    }
+  }
+}
+
+.login {
+  @include flex-v-center;
+  margin-left: 1.7rem;
+}
+
+.loginIcon {
+  display: inline-block;
+  margin-right: 2rem;
+  @include svg-hover-only;
+}
+
+.cartIcon {
+  display: inline-block;
+  position: relative;
+  @include svg-hover-only;
+}
+
+.cartNumber {
+  position: absolute;
+  top: -0.2rem;
+  right: -0.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  @include flex-all-center;
+  border: 2px solid var(--main-light);
+  border-radius: 50%;
+  color: var(--main-light);
+  font-size: 0.7em;
+  background-color: var(--accent);
+}

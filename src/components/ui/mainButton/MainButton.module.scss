@@ -1,0 +1,16 @@
+@import './src/styles/vars';
+
+.btn {
+  padding: 17px 30px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: var(--shaft);
+  background-color: var(--main-light);
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: var(--accent);
+}
