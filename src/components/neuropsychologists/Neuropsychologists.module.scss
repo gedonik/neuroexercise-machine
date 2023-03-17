@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.video__linkNeuro::after {
+  background-image: url('src/assets/images/video.png');
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}

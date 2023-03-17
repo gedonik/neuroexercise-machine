@@ -1,17 +1,16 @@
 import React from 'react';
-import HeadingsMenu from "./headingsMenu/HeadingsMenu";
+import HeaderMenu from "./headerMenu/HeaderMenu";
 import HeaderInfo from "./headerInfo/HeaderInfo";
 import HeaderCategories from "./headerCategories/HeaderCategories";
+import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
     return (
         <header className="header">
             <div className="container">
-                <nav className="header__menu">
-                    <HeadingsMenu/>
+                    <HeaderMenu/>
                     <HeaderInfo/>
                     <HeaderCategories/>
-                </nav>
             </div>
         </header>
     );

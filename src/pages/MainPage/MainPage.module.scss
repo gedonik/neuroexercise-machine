@@ -1,0 +1,43 @@
+//.mainPage {
+//  position: relative;
+//
+//  &::after,
+//  &::before {
+//    content: '';
+//    position: absolute;
+//    background-repeat: no-repeat;
+//    background-size: contain;
+//    background-position: center;
+//  }
+//
+//  &::after {
+//    top: 12.5rem;
+//    right: 0;
+//    width: 5rem;
+//    height: 9rem;
+//    background-image: url("src/assets/images/icons/decor-round.svg");
+//  }
+//
+//  &::before {
+//    top: 83rem;
+//    left: 0;
+//    width: 6rem;
+//    height: 10.3rem;
+//    background-image: url("src/assets/images/icons/decor-rhomb.svg");
+//  }
+//}
+
+.neuropsychologists,
+.neuroexerciseMachines,
+.about {
+  margin-bottom: 5rem;
+}
+
+//@media screen and (max-width: 900px) {
+//  .mainPage {
+//    &::after,
+//    &::before {
+//      display: none;
+//    }
+//  }
+//}

@@ -1,0 +1,26 @@
+.aboutWrapper {
+  padding: 90px 80px;
+  background-color: var(--alabaster);
+}
+
+.aboutContent {
+  display: flex;
+  gap: 30px;
+}
+
+.video__linkAbout::after {
+  background-image: url('./src/assets/images/about-video.png');
+}
+
+.title {
+  margin-bottom: 10px;
+  color: var(--shaft);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.descr {
+  margin-bottom: 17px;
+  font-size: 18px;
+  line-height: 23px;
+}

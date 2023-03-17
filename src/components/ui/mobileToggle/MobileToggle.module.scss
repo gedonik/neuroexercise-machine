@@ -1,0 +1,35 @@
+@import './src/styles/vars';
+
+.mobWrapper {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 25px;
+  background-color: var(--main-light);
+  z-index: 10;
+}
+
+.mobHeader {
+  @include flex-all-sb;
+  margin-bottom: 20px;
+}
+
+.mobTitle {
+  color: var(--main-dark);
+  font-size: 1.2em;
+}
+
+.close {
+  position: relative;
+  z-index: 5;
+  @include close-btn;
+
+  span:first-child {
+    transform: rotate(45deg);
+  }
+
+  span:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+}

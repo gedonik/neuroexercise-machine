@@ -1,7 +1,7 @@
 @import './src/styles/vars';
 
 .headerInfo {
-  @include flex;
+  @include flex-v-center;
   padding: 2rem 0;
 
   &__logoLink,
@@ -10,8 +10,10 @@
   }
 
   &__searchForm {
-    display: block;
     position: relative;
+    display: block;
+    max-width: 23rem;
+    width: 100%;
 
     &::before {
       content: '';
@@ -31,6 +33,7 @@
 
 .headerAddress {
   position: relative;
+  flex-shrink: 0;
   font-style: normal;
 
   &::after {
@@ -39,15 +42,18 @@
     right: 0;
     top: 0;
     bottom: 0;
-    width: 1px;
-    height: 50px;
-    border: 1px solid var(--gallery);
+    width: 0.125rem;
+    height: 3rem;
     background-color: var(--gallery);
   }
 
   &__contacts {
     @include flex-v-center;
     margin-bottom: 0.4rem;
+  }
+
+  span em {
+    font-style: normal;
   }
 
   &__phone,
@@ -90,9 +96,12 @@
   &__mail {
     &::before {
       background-image: url('src/assets/images/icons/mail.svg');
-
     }
   }
+}
+
+.search__btn {
+  display: none;
 }
 
 .login {
@@ -114,14 +123,108 @@
 
 .cartNumber {
   position: absolute;
-  top: -0.2rem;
-  right: -0.5rem;
-  width: 1.2rem;
-  height: 1.2rem;
+  top: -0.3rem;
+  right: -0.7rem;
+  width: 1.7rem;
+  height: 1.7rem;
   @include flex-all-center;
-  border: 2px solid var(--main-light);
+  border: 3px solid var(--main-light);
   border-radius: 50%;
   color: var(--main-light);
-  font-size: 0.7em;
+  font-size: 1em;
   background-color: var(--accent);
+}
+
+@media only screen and (max-width: 1100px) {
+  .headerInfo {
+    &__logoLink,
+    &__searchForm {
+      margin-right: 1rem;
+    }
+
+    img {
+      display: block;
+      width: 16rem;
+    }
+  }
+
+  .headerAddress {
+    font-size: 0.9em;
+  }
+
+  .loginIcon {
+    svg {
+      width: 1.3rem;
+      height: 1.9rem;
+    }
+  }
+
+  .cartIcon {
+    svg {
+      width: 1.9rem;
+      height: 1.9rem;
+    }
+
+    span {
+      width: 1.5rem;
+      height: 1.6rem;
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .headerInfo {
+    justify-content: space-between;
+
+    &__searchForm {
+      display: none;
+    }
+
+    &__logoLink {
+      display: none;
+    }
+  }
+
+  .headerAddress {
+    &::after {
+      display: none;
+    }
+  }
+
+  .search__btn,
+  .loginIcon,
+  .cartIcon {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .search__btn {
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+
+    @include svg-hover-only;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .headerAddress {
+    &__contacts {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    span em {
+      display: none;
+    }
+  }
+
+  .login {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

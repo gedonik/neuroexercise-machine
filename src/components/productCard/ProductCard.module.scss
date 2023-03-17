@@ -1,0 +1,149 @@
+@import 'src/styles/vars';
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.product {
+  width: 270px;
+  border: 1px solid var(--gallery);
+  border-radius: 10px;
+}
+
+.content {
+  padding: 1.9rem 1.3rem 1.3rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.img {
+  width: 230px;
+  height: 125px;
+  object-fit: contain;
+  margin-bottom: 35px;
+}
+
+.title {
+  margin-bottom: 0.6rem;
+  color: var(--shaft);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.description {
+  margin-bottom: 0.9rem;
+  color: var(--main);
+}
+
+.orderWrapper {
+  @include flex-all-sb;
+  margin-bottom: 0.9rem;
+}
+
+.salePrice {
+  color: var(--shaft);
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.priceWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  text-decoration-line: line-through;
+}
+
+.changeQuantity {
+  display: flex;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: var(--main);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 35px;
+    width: 1px;
+    height: 30px;
+  }
+}
+
+.quantity {
+  display: block;
+  padding-left: 15px;
+  width: 4rem;
+  height: 3rem;
+  border: 1px solid var(--main);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.quantityBtns {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 70px;
+}
+
+.addProduct,
+.removeProduct {
+  width: 15px;
+  height: 17px;
+  padding: 0;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.addProduct {
+  svg {
+    rotate: 270deg;
+  }
+
+  &:hover {
+    margin-bottom: 5px;
+  }
+}
+
+.removeProduct {
+  svg {
+    rotate: 90deg;
+  }
+
+  &:hover {
+    margin-top: 5px;
+  }
+}
+
+.buyBtn {
+  border: 1px solid transparent;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: var(--main-light);
+  background-color: var(--accent);
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: var(--main-dark);
+  }
+}
+
+.moreBtn {
+  border: 1px solid var(--gallery);
+  transition: border-color 0.3s ease-in-out;
+
+  &:hover {
+    border-color: var(--main);
+  }
+}

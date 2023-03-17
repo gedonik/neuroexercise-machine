@@ -1,30 +1,40 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './HeaderCategories.module.scss';
-
-type HeaderCategoriesType = {
-    title: string,
-    keyName: string
-}
+import { headerCategories } from '../links';
+import {NavLink} from "react-router-dom";
+import MobileToggle from "../../ui/mobileToggle/MobileToggle";
+import MobCategoryList from "./MobCategoryList";
 
 const HeaderCategories: React.FC = () => {
-    const headerCategories: HeaderCategoriesType[] = [
-        {title: 'Мозжечковая стимуляция', keyName: 'cerebellarStimulation'},
-        {title: 'Межполушарные доски', keyName: 'interHemisphereBoards'},
-        {title: 'Нейрокосички', keyName: 'neurobraids'},
-        {title: 'Балансиры', keyName: 'balanceWeights'},
-        {title: 'Нейровосьмерки', keyName: 'neuroeights'},
-        {title: 'Разное', keyName: 'different'},
-    ]
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className={styles.headerCategories}>
-            <ul className={styles.headerCategories__list}>
+        <div className={styles.categories}>
+            <ul className={styles.categories__list}>
                 {headerCategories.map((category) => (
-                    <li className={styles.headerCategories__item} key={category.keyName}>
-                        {category.title}
+                    <li className={styles.categories__item} key={category.keyName}>
+                        <NavLink className={styles.categories__link} to='#'>
+                            {category.title}
+                        </NavLink>
                     </li>
                 ))}
             </ul>
+
+            {isMenuOpen
+                ?
+                <MobileToggle
+                    title="Каталог продукции"
+                    content={<MobCategoryList/>}
+                    setVisible={setIsMenuOpen}
+                />
+                : ''}
+
+            <button
+                className={`reset-btn ${styles.categories__btn}`}
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+                Каталог продукции
+            </button>
         </div>
     );
 };
