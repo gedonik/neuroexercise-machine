@@ -1,5 +1,7 @@
+@import './src/styles/vars';
+
 .categoriesList {
-  display: flex;
+  @include flex;
   flex-direction: column;
   max-width: 15rem;
 }

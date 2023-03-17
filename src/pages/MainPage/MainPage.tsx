@@ -6,7 +6,7 @@ import styles from './MainPage.module.scss';
 import Neuropsychologists from "../../components/neuropsychologists/Neuropsychologists";
 import NeuroexerciseMachines from "../../components/neuroexerciseMachines/NeuroexerciseMachines";
 import About from "../../components/about/About";
-import Feedback from "../../components/feedbck/Feedback";
+import Feedback from "../../components/feedback/Feedback";
 
 const MainPage = () => {
     return (

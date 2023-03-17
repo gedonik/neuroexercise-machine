@@ -7,7 +7,7 @@
   height: 100vh;
   padding: 25px;
   background-color: var(--main-light);
-  z-index: 10;
+  z-index: 20;
 }
 
 .mobHeader {
@@ -22,7 +22,7 @@
 
 .close {
   position: relative;
-  z-index: 5;
+  z-index: 25;
   @include close-btn;
 
   span:first-child {

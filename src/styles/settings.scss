@@ -94,43 +94,20 @@ body {
 }
 
 .catalog-link {
-  padding-right: 20px;
-  position: relative;
+  @include arrow-link;
   color: var(--shaft);
-  transition: color 0.3s ease-in-out;
 
   &::after {
-    content: '';
-    position: absolute;
-    top: 60%;
-    transform: translateY(-50%);
-    right: 0;
-    width: 7px;
-    height: 8px;
     background-image: url('src/assets/images/icons/angle-right-black.svg');
-    transition: right 0.3s ease-in-out;
   }
 
   &::before {
-    content: '';
-    position: absolute;
     width: 65px;
-    height: 1px;
-    bottom: 0;
     background-color: var(--shaft);
-    transition: display 0.3s ease-in-out;
   }
 
   &:hover {
     color: var(--accent);
-
-    &::after {
-      right: 10px;
-    }
-
-    &::before {
-      display: none;
-    }
   }
 }
 
@@ -148,6 +125,7 @@ body {
 
 .video {
   position: relative;
+
   &__link {
     display: flex;
     justify-content: center;
