@@ -1,10 +1,12 @@
+@import './src/styles/vars';
+
 .aboutWrapper {
   padding: 90px 80px;
   background-color: var(--alabaster);
 }
 
 .aboutContent {
-  display: flex;
+  @include flex;
   gap: 30px;
 }
 

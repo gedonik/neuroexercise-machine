@@ -37,8 +37,7 @@
 }
 
 .social {
-  display: flex;
-  align-items: center;
+  @include flex-v-center;
   gap: 1.2rem;
 }
 
@@ -63,7 +62,7 @@
 @media only screen and (max-width: 750px) {
   .menuWrapper {
     position: relative;
-    z-index: 1;
+    z-index: 11;
   }
 
   .menuWrapperActive {
@@ -75,9 +74,13 @@
       width: 100vw;
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.5);
-      z-index: 2;
+      z-index: 12;
     }
   }
+
+  //.menuWrapperActive, body {
+  //  overflow-y: hidden;
+  //}
 
   .menu {
     &__list {
@@ -108,7 +111,7 @@
     overflow-y: auto;
     transition: all 0.3s ease-in-out;
     background-color: var(--main-light);
-    z-index: 3;
+    z-index: 13;
 
     &__list {
       flex-direction: column;
@@ -131,7 +134,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 5;
+    z-index: 15;
     @include close-btn;
 
     span:first-child {

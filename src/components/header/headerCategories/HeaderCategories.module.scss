@@ -1,12 +1,12 @@
+@import './src/styles/vars';
+
 .categories {
   margin-bottom: 2rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 
   &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-all-sb;
     padding: 2rem 2.5rem 1.5rem 2.5rem;
   }
 
