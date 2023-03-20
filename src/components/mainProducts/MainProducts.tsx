@@ -4,12 +4,20 @@ import {Link} from "react-router-dom";
 import girlBilgoBoard from "../../assets/images/mainProducts/girl-bilgo-board.png";
 import rockerBoard from '../../assets/images/mainProducts/rockerboard.png';
 import neuroeights from '../../assets/images/mainProducts/neuroeights.png';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import './swiper.scss';
 
 const MainProducts: React.FC = () => {
     return (
         <div className={styles.mainProducts}>
             <div className="container">
                 <div className={styles.mainProducts__wrapper}>
+
                     <div className={styles.mainCard}>
                         <article className={styles.mainCard__content}>
                             <h2 className={styles.mainCard__title}>Доска Бильгоу</h2>
@@ -55,6 +63,52 @@ const MainProducts: React.FC = () => {
                         </article>
                     </div>
                 </div>
+
+                <Swiper
+                    className={styles.swiper}
+                    // install Swiper modules
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    pagination={{ clickable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                >
+                    <SwiperSlide>
+                        <div className={`${styles.mobCard} ${styles.mainCard}`}>
+                            <article className={styles.mobCard__content}>
+                                <h2 className={styles.mobCard__title}>Доска Бильгоу</h2>
+                                <div className={styles.mobCard__img}>
+                                    <img src={girlBilgoBoard} alt="Девочка на доске Бильгоу"/>
+                                </div>
+                                <Link className={styles.mobCard__link} to={'/'}>Узнать подробности</Link>
+                            </article>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={`${styles.mobCard} ${styles.smallTopCard}`}>
+                            <article className={styles.mobCard__content}>
+                                <h2 className={styles.mobCard__title}>РокерБорд</h2>
+                                <div className={styles.mobCard__img}>
+                                    <img src={rockerBoard} alt="РокерБорд"/>
+                                </div>
+                                <Link className={styles.mobCard__link} to={'/'}>Узнать подробности</Link>
+                            </article>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={`${styles.mobCard} ${styles.smallBottomCard}`}>
+                            <article className={styles.mobCard__content}>
+                                <h2 className={styles.mobCard__title}>Комплект нейровосьмерок</h2>
+                                <div className={styles.mobCard__img}>
+                                    <img src={neuroeights} alt="Комплект нейровосьмерок"/>
+                                </div>
+                                <Link className={styles.mobCard__link} to={'/'}>Узнать подробности</Link>
+                            </article>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+
             </div>
         </div>
     );

@@ -66,21 +66,7 @@
     margin-bottom: 1.5rem;
   }
 
-  &__link {
-    display: inline-block;
-    padding: 17px 30px 15px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    color: var(--shaft);
-    background-color: var(--main-light);
-    font-weight: 700;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-
-    &:hover {
-      color: var(--accent);
-    }
-  }
+  @include more-link;
 }
 
 .smallCards {
@@ -187,5 +173,57 @@
 
   .smallBottomCard {
     grid-area: 2 / 2 / 3 / 3;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mainProducts {
+    &__wrapper {
+      display: none;
+    }
+  }
+
+  .swiper {
+    display: block !important;
+  }
+
+  .mobCard {
+    position: relative;
+    @include flex-column-h-center;
+    width: 100%;
+    border-radius: 10px;
+    color: var(--main-light);
+    z-index: 1;
+    min-height: 30rem;
+
+    &__content {
+      margin-top: 0;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      height: 25rem;
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+      color: var(--main-light);
+      font-size: 2em;
+      text-align: center;
+    }
+
+    &__img {
+      position: static;
+      display: block;
+      width: 12rem;
+      margin-bottom: 1rem;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    @include more-link;
   }
 }

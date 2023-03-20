@@ -15,9 +15,9 @@ const MainPage = () => {
             <section className="main-product">
                 <MainProducts/>
             </section>
-            {/*<section className="products-of-month">*/}
-            {/*    <ProductsOfMonth/>*/}
-            {/*</section>*/}
+            <section className="products-of-month">
+                <ProductsOfMonth/>
+            </section>
             {/*<section className={styles.neuropsychologists}>*/}
             {/*    <Neuropsychologists/>*/}
             {/*</section>*/}

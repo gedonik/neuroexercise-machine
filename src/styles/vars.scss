@@ -123,3 +123,21 @@
     }
   }
 }
+
+@mixin more-link {
+  &__link {
+    display: inline-block;
+    padding: 17px 30px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: var(--shaft);
+    background-color: var(--main-light);
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
