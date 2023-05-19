@@ -1,12 +1,10 @@
-@import './src/styles/vars';
-
 .btn {
-  padding: 17px 30px 15px;
+  padding: var(--space-1) var(--space-2) var(--space-1);
   border: 1px solid transparent;
-  border-radius: 5px;
+  border-radius: var(--space-0-25);
   color: var(--shaft);
   background-color: var(--main-light);
-  font-weight: 700;
+  font-weight: var(--font-bold);
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }

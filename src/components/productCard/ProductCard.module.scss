@@ -1,5 +1,3 @@
-@import 'src/styles/vars';
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -7,7 +5,6 @@ input::-webkit-inner-spin-button {
 }
 
 .product {
-  width: 270px;
   border: 1px solid var(--gallery);
   border-radius: 10px;
 }
@@ -20,34 +17,75 @@ input::-webkit-inner-spin-button {
   height: 100%;
 }
 
+.imgLink {
+  position: relative;
+  z-index: 1;
+}
+
 .img {
-  width: 230px;
-  height: 125px;
   object-fit: contain;
-  margin-bottom: 35px;
+  margin-bottom: var(--space-2);
+}
+
+.statusWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.status {
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--main-light);
+  background-color: var(--main-dark);
+  font-size: 12px;
+  font-weight: var(--font-bold);
+}
+
+.statusRecommended {
+  background-color: var(--macaroni);
+}
+
+.statusSale {
+  background-color: var(--pastel-green);
+}
+
+.statusNew {
+  background-color: var(--azure-radiance);
+}
+
+.statusProductOfMoth {
+  background-color: var(--silver);
 }
 
 .title {
-  margin-bottom: 0.6rem;
+  margin-bottom: var(--space-0-5);
   color: var(--shaft);
-  font-weight: 700;
+  font-weight: var(--font-bold);
   font-size: 1.1em;
 }
 
 .description {
-  margin-bottom: 0.9rem;
+  margin-bottom: var(--space-1);
   color: var(--main);
 }
 
 .orderWrapper {
-  @include flex-all-sb;
-  margin-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: var(--space-1);
 }
 
-.salePrice {
+.price {
   color: var(--shaft);
-  font-weight: 700;
-  font-size: 1.25em;
+  font-weight: var(--font-bold);
+  font-size: var(--h3-font-size);
 }
 
 .priceWrapper {
@@ -55,7 +93,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
 }
 
-.price {
+.salePrice {
   text-decoration-line: line-through;
 }
 
@@ -69,35 +107,36 @@ input::-webkit-inner-spin-button {
     background-color: var(--main);
     top: 50%;
     transform: translateY(-50%);
-    left: 35px;
+    left: var(--space-2);
     width: 1px;
-    height: 30px;
+    height: var(--space-2);
   }
 }
 
 .quantity {
   display: block;
-  padding-left: 15px;
+  padding-left: var(--space-1);
   width: 4rem;
   height: 3rem;
   border: 1px solid var(--main);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: var(--space-0-25);
+  border-bottom-left-radius: var(--space-0-25);
 }
 
 .quantityBtns {
   position: absolute;
   display: flex;
   flex-direction: column;
+  height: 100%;
   top: 50%;
   transform: translateY(-50%);
-  right: 70px;
+  right: 5.7rem;
 }
 
 .addProduct,
 .removeProduct {
-  width: 15px;
-  height: 17px;
+  width: var(--space-1);
+  height: 50%;
   padding: 0;
   border: transparent;
   background-color: transparent;
@@ -107,30 +146,35 @@ input::-webkit-inner-spin-button {
 .addProduct {
   svg {
     rotate: 270deg;
+    margin-bottom: -8px;
+    transition: margin-bottom 0.3s ease-in-out;
   }
 
-  &:hover {
-    margin-bottom: 5px;
+  svg:hover {
+    margin-bottom: -1px;
   }
 }
 
 .removeProduct {
   svg {
     rotate: 90deg;
+    margin-bottom: 3px;
+    transition: margin-bottom 0.3s ease-in-out;
   }
 
-  &:hover {
-    margin-top: 5px;
+  svg:hover {
+    margin-bottom: -2px;
   }
 }
 
 .buyBtn {
+  padding: 0 var(--space-1);
   border: 1px solid transparent;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: var(--space-0-25);
+  border-bottom-right-radius: var(--space-0-25);
   color: var(--main-light);
   background-color: var(--accent);
-  font-weight: 700;
+  font-weight: var(--font-bold);
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 

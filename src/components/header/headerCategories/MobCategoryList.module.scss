@@ -1,11 +1,9 @@
-@import './src/styles/vars';
-
 .categoriesList {
-  @include flex;
+  display: flex;
   flex-direction: column;
   max-width: 15rem;
 }
 
 .categoriesItem {
-  padding: 1rem 1rem 1rem 0;
+  padding: var(--space-1) var(--space-1) var(--space-1) 0;
 }

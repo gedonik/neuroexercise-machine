@@ -1,12 +1,12 @@
-@import './src/styles/vars';
-
 .categories {
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: var(--space-0-75);
 
   &__list {
-    @include flex-all-sb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 2rem 2.5rem 1.5rem 2.5rem;
   }
 
@@ -16,11 +16,11 @@
 
   &__link {
     display: block;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     text-align: center;
-    font-size: 1.2em;
-    line-height: 1.2;
-    color: #333;
+    font-size: var(--h3-font-size);
+    line-height: var(--lh-normal);
+    color: var(--shaft);
     cursor: pointer;
     transition: color 0.3s ease-in-out;
 
@@ -37,7 +37,7 @@
 @media only screen and (max-width: 900px) {
   .categories {
     &__link {
-      font-size: 1em;
+      font-size: var(--normal-font-size);
     }
   }
 }
@@ -53,8 +53,8 @@
     &__btn {
       display: block;
       width: 100%;
-      padding: 2rem 0;
-      font-weight: 700;
+      padding: var(--space-2) 0;
+      font-weight: var(--font-bold);
     }
   }
 }

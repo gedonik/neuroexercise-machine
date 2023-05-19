@@ -1,11 +1,27 @@
-@import 'src/styles/vars';
-
 .productsOfMonthWrapper {
-  margin-bottom: 5rem;
+  margin-bottom: var(--space-5);
 }
 
 .catalogList {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.9rem;
+  gap: var(--space-2);
+}
+
+@media only screen and (max-width: 1180px) {
+  .catalogList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .catalogList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .catalogList {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

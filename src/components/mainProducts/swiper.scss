@@ -1,5 +1,3 @@
-@import './src/styles/vars';
-
 .swiper {
   display: none;
 }
@@ -17,7 +15,7 @@
 
   .swiper-pagination {
     position: static;
-    margin-top: 1rem;
+    margin-top: var(--space-1);
   }
 
   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -37,6 +35,8 @@
   }
 
   .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    @include flex-all-center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

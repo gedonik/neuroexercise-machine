@@ -5,15 +5,9 @@
       "img": "https://i.postimg.cc/CMQDSQvV/kineseological-ball.png",
       "title": "Кинезиологический мяч 1 шт",
       "shortDescr": "Мяч для развивающих упражнений, диаметр 60 мм",
-      "mainPrice": 490,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 490,
+      "status": [],
       "category": [
         "kinesio-balls"
       ]
@@ -23,15 +17,9 @@
       "img": "https://i.postimg.cc/mrjzqXcJ/maxi-set.png",
       "title": "Комплект 'Макси'",
       "shortDescr": "Комплект тренажеров для развивающих занятий",
-      "mainPrice": 9395,
       "salePrice": null,
-      "secondaryPrice": {
-        "new": false,
-        "salePercent": null,
-        "recommended": true,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "price": 9395,
+      "status": ["Рекомендуем"],
       "category": [
         "cerebellar-stimulation"
       ]
@@ -39,19 +27,23 @@
     {
       "id": 3,
       "img": "https://i.postimg.cc/mrjzqXcJ/maxi-set.png",
-      "title": "Доска Бильгоу для мозжечковой стимуляции",
+      "altImg": "https://i.postimg.cc/5t8HQvjD/girl-bilgo-board.png",
+      "title": "Доска Бильгоу",
+      "titleDescr": "Доска Бильгоу — тренажер для мозжечковой стимуляции. С помощью него ребенок учится удерживать равновесие и управлять своим телом, и, таким образом, активирует все свои внутренние ресурсы.",
       "shortDescr": "Тренажер для мозжечковой стимуляции.",
-      "mainPrice": 2030,
-      "secondaryPrice": 2900,
-      "status": {
-        "new": true,
-        "salePercent": "-30%",
-        "recommended": true,
-        "action": true,
-        "prodOfMonth": true
-      },
+      "salePrice": 2030,
+      "price": 2900,
+      "status": [
+        "Новинка",
+        "-30%",
+        "Рекомендуем",
+        "Товар месяца"
+      ],
       "category": [
-        "cerebellar-stimulation"
+        "cerebellar-stimulation",
+        "main-product",
+        "main-card",
+        "product-of-month"
       ]
     },
     {
@@ -59,15 +51,9 @@
       "img": "https://i.postimg.cc/ZqSpXvwB/fast-start-plus-set.png",
       "title": "Комплект 'Быстрый старт+'",
       "shortDescr": "Комплект тренажеров для развивающих занятий",
-      "mainPrice": 4851,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 4851,
+      "status": [],
       "category": [
         "cerebellar-stimulation"
       ]
@@ -77,15 +63,9 @@
       "img": "https://i.postimg.cc/bvydQx6T/success-set.png",
       "title": "Комплект 'Успех'",
       "shortDescr": "Комплект тренажеров для развивающих занятий",
-      "mainPrice": 7376,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 7376,
+      "status": [],
       "category": [
         "cerebellar-stimulation"
       ]
@@ -95,15 +75,9 @@
       "img": "https://i.postimg.cc/k4M8g337/floor-colored-target.png",
       "title": "Мишень напольная цветная",
       "shortDescr": "Напольная мишень для развивающих занятий, 43 х 43 см",
-      "mainPrice": 1475,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 1475,
+      "status": [],
       "category": [
         "cerebellar-stimulation"
       ]
@@ -113,15 +87,9 @@
       "img": "https://i.postimg.cc/q7xyrBFm/kineseological-2-balls.png",
       "title": "Кинезиологический мяч 2 шт",
       "shortDescr": "Комплект мячей для развивающих упражнений, диаметр 60 мм",
-      "mainPrice": 960,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 960,
+      "status": [],
       "category": [
         "kinesio-balls"
       ]
@@ -131,15 +99,9 @@
       "img": "https://i.postimg.cc/ZKvNRxgv/logo-target-and-manual.jpg",
       "title": "Лого-мишень + методическое руководство",
       "shortDescr": "Напольная лого-мишень с магнитными карточками, 43 х 43 см",
-      "mainPrice": 7900,
-      "secondaryPrice": null,
-      "status": {
-        "new": true,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 7900,
+      "status": ["Новинка"],
       "category": [
         "cerebellar-stimulation"
       ]
@@ -149,15 +111,9 @@
       "img": "https://i.postimg.cc/qRmKtb4y/kineseological-4-balls.png",
       "title": "Кинезиологический мяч 4 шт",
       "shortDescr": "Комплект мячей для развивающих упражнений, диаметр 60 мм",
-      "mainPrice": 1880,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 1880,
+      "status": [],
       "category": [
         "kinesio-balls"
       ]
@@ -167,15 +123,9 @@
       "img": "https://i.postimg.cc/J0jSRdfc/target-floor-with-nums-colored.png",
       "title": "Мишень напольная цветная с цифрами",
       "shortDescr": "Напольная мишень для развивающих занятий, 43 х 43 см",
-      "mainPrice": 1475,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 1475,
+      "status": [],
       "category": [
         "cerebellar-stimulation"
       ]
@@ -185,15 +135,9 @@
       "img": "https://i.postimg.cc/tT9dnnPQ/bags-and-balls-for-bilgo.png",
       "title": "Комплект мешочков и мячей для занятий по методике Бильгоу",
       "shortDescr": "В комплекте 2 набора с мешочками и 1 с мячиками",
-      "mainPrice": 1670,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 1670,
+      "status": [],
       "category": [
         "cerebellar-stimulation",
         "kinesio-bags",
@@ -205,31 +149,21 @@
       "img": "https://i.postimg.cc/rmzmH82R/target-floor-with-nums.png",
       "title": "Мишень напольная с цифрами",
       "shortDescr": "Напольная мишень для развивающих занятий, 43 х 43 см",
-      "mainPrice": 1475,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
-      "category": ["cerebellar-stimulation"]
+      "salePrice": null,
+      "price": 1475,
+      "status": [],
+      "category": [
+        "cerebellar-stimulation"
+      ]
     },
     {
       "id": 13,
       "img": "https://i.postimg.cc/MHNj5ncG/kineseological-10-balls.png",
       "title": "Кинезиологический мяч 10 шт",
       "shortDescr": "Комплект мячей для развивающих упражнений, диаметр 60 мм",
-      "mainPrice": 4400,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 4400,
+      "status": [],
       "category": [
         "kinesio-balls"
       ]
@@ -239,81 +173,61 @@
       "img": "https://i.postimg.cc/Z5FCB7Ln/stand-with-targets.png",
       "title": "Стойка с мишенями-целями",
       "shortDescr": "Стойка с пятью двусторонними мишенями-целями",
-      "mainPrice": 1238,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
-      "category": ["cerebellar-stimulation"]
+      "salePrice": null,
+      "price": 1238,
+      "status": [],
+      "category": [
+        "cerebellar-stimulation"
+      ]
     },
     {
       "id": 15,
       "img": "https://i.postimg.cc/SKgRVn3p/stand-with-targets-plank.png",
       "title": "Стойка с мишенями, мяч маятник и планка для отбивания",
       "shortDescr": "Стойка с 5 мишенями-целями",
-      "mainPrice": 1634,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
-      "category": ["cerebellar-stimulation"]
+      "salePrice": null,
+      "price": 1634,
+      "status": [],
+      "category": [
+        "cerebellar-stimulation"
+      ]
     },
     {
       "id": 16,
       "img": "https://i.postimg.cc/7ZgT1Yqx/neurojump-rope-with-lights.jpg",
       "title": "Нейроскакалка с подсветкой",
       "shortDescr": "Нейроскакалка - увлекательный нейротренажер для развития ритма и координации",
-      "mainPrice": 450,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
-      "category": ["cerebellar-stimulation"]
+      "salePrice": null,
+      "price": 450,
+      "status": [],
+      "category": [
+        "cerebellar-stimulation"
+      ]
     },
     {
       "id": 17,
       "img": "https://i.postimg.cc/D0M1NCNn/bilgo-board-mini.jpg",
       "title": "Доска Бильгоу МИНИ для мозжечковой стимуляции",
       "shortDescr": "Тренажер для мозжечковой стимуляции.",
-      "mainPrice": 1599,
-      "secondaryPrice": null,
-      "status": {
-        "new": true,
-        "salePercent": null,
-        "recommended": true,
-        "action": true,
-        "prodOfMonth": true
-      },
-      "category": ["cerebellar-stimulation"]
+      "salePrice": null,
+      "price": 1599,
+      "status": ["Новинка", "Рекомендуем", "Товар месяца"],
+      "category": [
+        "cerebellar-stimulation",
+        "product-of-month"
+      ]
     },
     {
       "id": 18,
       "img": "https://i.postimg.cc/fyGJX1Ft/rubber-15-balls.jpg",
       "title": "Уценка: Набор каучуковых мячей 15шт.",
       "shortDescr": "Имеется дефект: Царапины, сколы, трещены, пятна. Не влияющий на функционал.",
-      "mainPrice": 390,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": true,
-        "action": false,
-        "prodOfMonth": true
-      },
+      "salePrice": null,
+      "price": 390,
+      "status": ["Рекомендуем", "Товар месяца"],
       "category": [
-        "kinesio-balls"
+        "kinesio-balls",
+        "product-of-month"
       ]
     },
     {
@@ -321,63 +235,46 @@
       "img": "https://i.postimg.cc/X7twczFg/bilgo-exercises-cards.png",
       "title": "20 карточек с упражнениями для занятий на балансире, балансировочной Доске Бильгоу",
       "shortDescr": "20 цветных, двухсторонних, ламинированных карточек с рисунками  упражнений.",
-      "mainPrice": 675,
-      "secondaryPrice": null,
-      "status": {
-        "new": true,
-        "salePercent": null,
-        "recommended": true,
-        "action": false,
-        "prodOfMonth": true
-      },
-      "category": ["cerebellar-stimulation"]
+      "salePrice": null,
+      "price": 675,
+      "status": ["Новинка", "Рекомендуем", "Товар месяца"],
+      "category": [
+        "cerebellar-stimulation",
+        "product-of-month"
+      ]
     },
     {
       "id": 20,
       "img": "https://i.postimg.cc/NGJ8LMjS/cards-for-paintings-double.jpg",
       "title": "1 пара карточек для рисования 2 руками",
       "shortDescr": "Ламинированные карточки с рисунком, 2 шт, 220х220 мм",
-      "mainPrice": 290,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
-      "category": ["inter-hemisphere-boards"]
+      "salePrice": null,
+      "price": 290,
+      "status": [],
+      "category": [
+        "inter-hemisphere-boards"
+      ]
     },
     {
       "id": 21,
       "img": "https://i.postimg.cc/gJ4VVcqw/base-for-inserts.jpg",
       "title": "Основа для вкладышей",
       "shortDescr": "Основа для вкладышей межполушарного лабиринта, 450 х 235 мм",
-      "mainPrice": 890,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
-      "category": ["inter-hemisphere-boards"]
+      "salePrice": null,
+      "price": 890,
+      "status": [],
+      "category": [
+        "inter-hemisphere-boards"
+      ]
     },
     {
       "id": 22,
       "img": "https://i.postimg.cc/GmYvMxxn/combo-balls.jpg",
       "title": "Комбо набор мячей: Кинезиологические мячи 2 шт +  с фиксацией на одежде 2 шт + мяч-маятник + мягкий  мяч-маятник (стресс болл)",
       "shortDescr": "Комбо набор мячей: 2 кинезио, 2 с фиксацией, мяч-маятник, мягкий мяч-маятник",
-      "mainPrice": 2250,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": true,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 2250,
+      "status": ["Товар месяца"],
       "category": [
         "kinesio-balls"
       ]
@@ -387,15 +284,9 @@
       "img": "https://i.postimg.cc/cCgvvdDG/rainbow-sensory-pouches.png",
       "title": "Сенсорные мешочки Радуга",
       "shortDescr": "Комплект сенсорных мешочков для развивающих игр, 7 шт/ 10,5*6см",
-      "mainPrice": 941,
-      "secondaryPrice": null,
-      "status": {
-        "new": true,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 941,
+      "status": ["Новинка"],
       "category": [
         "kinesio-bags"
       ]
@@ -405,15 +296,9 @@
       "img": "https://i.postimg.cc/L8MJsKLG/sensory-pouches-pair.png",
       "title": "Сенсорные мешочки (парные)",
       "shortDescr": "Комплект сенсорных мешочков для развивающих игр, 10 шт/10,5*6см",
-      "mainPrice": 1138,
-      "secondaryPrice": null,
-      "status": {
-        "new": true,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 1138,
+      "status": ["Новинка"],
       "category": [
         "kinesio-bags"
       ]
@@ -423,15 +308,9 @@
       "img": "https://i.postimg.cc/CxyqffTP/kinetic-sacs.png",
       "title": "Кинезиологические мешочки",
       "shortDescr": "Кинезиологические мешочки для развивающих упражнений 4 шт",
-      "mainPrice": 850,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 850,
+      "status": [],
       "category": [
         "kinesio-bags"
       ]
@@ -441,15 +320,9 @@
       "img": "https://i.postimg.cc/cCgvvdDG/rainbow-sensory-pouches.png",
       "title": "3 весовых мешочка с крупой (разный вес)",
       "shortDescr": "Комплект весовых мешочков с крупой для развивающих упражнений, 3 шт",
-      "mainPrice": 644,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 644,
+      "status": [],
       "category": [
         "kinesio-bags"
       ]
@@ -459,15 +332,9 @@
       "img": "https://i.postimg.cc/P58Qgjhc/balls-set.jpg",
       "title": "Набор мячей: Кинезиологические мячи 2 шт + с фиксацией на одежде 2 шт",
       "shortDescr": "Комплект мячей для развивающих упражнений",
-      "mainPrice": 1610,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 1610,
+      "status": [],
       "category": [
         "kinesio-balls"
       ]
@@ -477,15 +344,9 @@
       "img": "https://i.postimg.cc/hGW1g5tG/balls-with-fix-on-clothes.jpg",
       "title": "Мячи с фиксацией на одежде 2 шт",
       "shortDescr": "Комплект мячей с фиксацией для развивающих упражнений, диаметр 45 мм",
-      "mainPrice": 460,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 460,
+      "status": [],
       "category": [
         "kinesio-balls"
       ]
@@ -495,15 +356,9 @@
       "img": "https://i.postimg.cc/5Ny3mzrf/ball-pendulum.jpg",
       "title": "Мяч-маятник",
       "shortDescr": "Мяч-маятник для развивающих упражнений, диаметр 70мм",
-      "mainPrice": 530,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 530,
+      "status": [],
       "category": [
         "kinesio-balls"
       ]
@@ -513,15 +368,9 @@
       "img": "https://i.postimg.cc/MKBcxKMy/soft-ball-pendulum.jpg",
       "title": "Мягкий-мяч маятник (Стресс болл)",
       "shortDescr": "Мягкий мяч-маятник для развивающих упражнений, диаметр 55 мм",
-      "mainPrice": 585,
-      "secondaryPrice": null,
-      "status": {
-        "new": true,
-        "salePercent": "-10%",
-        "recommended": true,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 585,
+      "status": ["Новинка", "-10%", "Рекомендуем"],
       "category": [
         "kinesio-balls"
       ]
@@ -531,31 +380,21 @@
       "img": "https://i.postimg.cc/T2C0m0Ck/ball-pendulum-with-plank.png",
       "title": "Мяч-маятник и планка для отбивания с цифрами",
       "shortDescr": "Мяч-маятник и планка для отбивания цветная с цифрами",
-      "mainPrice": 1574,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
-      "category": "cerebellar-stimulation"
+      "salePrice": null,
+      "price": 1574,
+      "status": [],
+      "category": [
+        "cerebellar-stimulation"
+      ]
     },
     {
       "id": 32,
       "img": "https://i.postimg.cc/L5n1jt87/kineseological-50-balls.jpg",
       "title": "Кинезиологический мяч 50 шт",
       "shortDescr": "Комплект мячей для развивающих упражнений, диаметр 60 мм",
-      "mainPrice": 19500,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 19500,
+      "status": [],
       "category": [
         "kinesio-balls"
       ]
@@ -565,15 +404,9 @@
       "img": "https://i.postimg.cc/Y2Z4Jm9r/reaction-ball.jpg",
       "title": "Мяч для развития реакции 1 шт",
       "shortDescr": "Мяч для развития реакции, диаметр 35 мм",
-      "mainPrice": 800,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 800,
+      "status": [],
       "category": [
         "kinesio-balls"
       ]
@@ -583,15 +416,9 @@
       "img": "https://i.postimg.cc/tTgZH3WT/reaction-2-balls.jpg",
       "title": "Набор мячей для развития реакции 2 шт",
       "shortDescr": "Мяч для развития реакции, диаметр 68 мм",
-      "mainPrice": 990,
-      "secondaryPrice": null,
-      "status": {
-        "new": false,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 990,
+      "status": [],
       "category": [
         "kinesio-balls"
       ]
@@ -601,15 +428,9 @@
       "img": "https://i.postimg.cc/HsNtvxGX/ball-with-water-250.jpg",
       "title": "Мяч с водой 250 гр",
       "shortDescr": "Мяч с водой для развивающих упражнений, вес 250 гр",
-      "mainPrice": 550,
-      "secondaryPrice": null,
-      "status": {
-        "new": true,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 550,
+      "status": ["Новинка"],
       "category": [
         "kinesio-balls"
       ]
@@ -619,15 +440,9 @@
       "img": "https://i.postimg.cc/KYPrYD1D/ball-with-water-500.jpg",
       "title": "Мяч с водой 500 гр",
       "shortDescr": "Мяч с водой для развивающих упражнений, вес 500 гр",
-      "mainPrice": 490,
-      "secondaryPrice": null,
-      "status": {
-        "new": true,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 490,
+      "status": ["Новинка"],
       "category": [
         "kinesio-balls"
       ]
@@ -637,17 +452,39 @@
       "img": "https://i.postimg.cc/7h6gmvmK/ball-with-water-1000.jpg",
       "title": "Мяч с водой 1000 гр",
       "shortDescr": "Мяч с водой для развивающих упражнений, вес 1000 гр",
-      "mainPrice": 890,
-      "secondaryPrice": null,
-      "status": {
-        "new": true,
-        "salePercent": null,
-        "recommended": false,
-        "action": false,
-        "prodOfMonth": false
-      },
+      "salePrice": null,
+      "price": 890,
+      "status": ["Новинка"],
       "category": [
         "kinesio-balls"
+      ]
+    },
+    {
+      "id": 38,
+      "img": "https://i.postimg.cc/DZYWfSPc/rockerboard.png",
+      "title": "РокерБорд",
+      "titleDescr": "РокерБорд — игровой тренажер для развития и укрепления эмоционального, физического здоровья ребенка.",
+      "shortDescr": "Тренажер для мозжечковой стимуляции.",
+      "salePrice": null,
+      "price": 2990,
+      "status": [],
+      "category": [
+        "cerebellar-stimulation",
+        "main-product"
+      ]
+    },
+    {
+      "id": 39,
+      "img": "https://i.postimg.cc/Ls2gxKsj/neuroeights.png",
+      "title": "Комплект нейровосьмерок",
+      "titleDescr": "Комплект лабиринтов — комплекс тренажеров для развивающих игр и упражнений.",
+      "shortDescr": "Тренажер для мозжечковой стимуляции.",
+      "salePrice": null,
+      "price": 1599,
+      "status": [],
+      "category": [
+        "cerebellar-stimulation",
+        "main-product"
       ]
     }
   ],

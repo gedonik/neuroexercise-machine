@@ -1,40 +1,100 @@
-@import 'vars.scss';
+/*=============== GOOGLE FONTS ===============*/
 
-html {
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --main-dark: #000;
+  --main-light: #fff;
+  --main: #707070;
+  --accent: #f07fae;
+  --gallery: #eee;
+  --shaft: #333;
+  --alabaster: #f7f7f7;
+  --macaroni: #ffc480;
+  --pastel-green: #5de39a;
+  --azure-radiance: #0099ff;
+  --silver: #ccc;
+
+  /*========== Font and typography ==========*/
+  --body-font: Bloggersans, sans-serif;
+  --lh-normal: 1.2;
+
+  /*0.5rem = 8px | 1rem = 16px ...*/
+  --big-font-size: 3.5em;
+  --h1-font-size: 2.25em;
+  --h2-font-size: 1.5em;
+  --h3-font-size: 1.25em;
+  --normal-font-size: 1em;
+  --small-font-size: 0.875em;
+  --smaller-font-size: 0.813em;
+  --tiny-font-size: 0.625em;
+
+  /*========== Font weight ==========*/
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /*========== Spaces ==========*/
+  /*0.5rem = 8px | 1rem = 16px ...*/
+  --space-0-25: 0.25rem;
+  --space-0-5: 0.5rem;
+  --space-0-75: 0.75rem;
+  --space-1: 1rem;
+  --space-1-5: 1.5rem;
+  --space-2: 2rem;
+  --space-2-5: 2.5rem;
+  --space-3: 3rem;
+  --space-4: 4rem;
+  --space-5: 5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Responsive typography */
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 2.75em;
+    --h1-font-size: 1.5em;
+    --h2-font-size: 1.25em;
+    --h3-font-size: 1em;
+    --normal-font-size: 0.938em;
+    --small-font-size: 0.813em;
+    --smaller-font-size: 0.75em;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
+html {
+  scroll-behavior: smooth;
 }
 
-ul,
-ol {
-  padding: 0;
+body, button, input, textarea, select {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
+body {
+  height: 100vh;
+  background-color: var(--main-light);
+  color: var(--main);
+  font-weight: var(--font-normal);
+  font-style: normal;
+  line-height: var(--lh-normal);
 }
 
-ul[class] {
+ul {
   list-style: none;
 }
 
@@ -43,24 +103,18 @@ a {
   text-decoration: none;
 }
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
+button {
+  border: none;
+  outline: transparent;
+  cursor: pointer;
 }
 
-body {
-  height: 100%;
-  color: var(--main);
-  background-color: var(--main-light);
-  font-family: Bloggersans, sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.2;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
+/*=============== REUSABLE CSS CLASSES ===============*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -74,35 +128,54 @@ body {
   overflow: hidden;
 }
 
-.reset-btn {
-  background-color: transparent;
-  border: 1px solid transparent;
-  cursor: pointer;
-}
-
-.container {
-  max-width: 75rem;
-  padding: 0 0.938rem;
-  margin: 0 auto;
-}
-
 .catalog-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.9rem;
+  margin-bottom: var(--space-2);
 }
 
 .catalog-link {
-  @include arrow-link;
   color: var(--shaft);
+  padding-right: 1.25rem;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 7px;
+    height: 8px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    transition: display 0.3s ease-in-out;
+  }
+
+  &:hover {
+    &::after {
+      right: 10px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
 
   &::after {
     background-image: url('src/assets/images/icons/angle-right-black.svg');
   }
 
   &::before {
-    width: 65px;
+    width: var(--space-4);
     background-color: var(--shaft);
   }
 
@@ -113,14 +186,14 @@ body {
 
 .section-title {
   color: var(--shaft);
-  font-weight: 700;
+  font-weight: var(--font-bold);
   font-size: 2em;
 }
 
 .product-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: var(--space-2);
 }
 
 .video {
@@ -131,8 +204,8 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 570px;
-    height: 433px;
+    width: 35rem;
+    height: 27rem;
     background-color: var(--shaft);
     z-index: -1;
 
@@ -141,8 +214,8 @@ body {
       transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 
       &:hover {
-        width: 65px;
-        height: 55px;
+        width: var(--space-4);
+        height: 3.5rem;
       }
     }
   }
@@ -150,12 +223,25 @@ body {
   &::after {
     content: '';
     position: absolute;
-    width: 570px;
-    height: 433px;
+    width: 35rem;
+    height: 27rem;
     inset: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     z-index: 100;
   }
+}
+
+/*=============== LAYOUT ===============*/
+.container {
+  max-width: 75rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+/*=============== BUTTONS ===============*/
+.reset-btn {
+  background-color: transparent;
+  border: 1px solid transparent;
 }
